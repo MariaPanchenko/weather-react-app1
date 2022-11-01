@@ -145,7 +145,8 @@ hr {
 
 .weather-temp {
   display: inline-block;
-  margin-left: 50%;
+
+  margin-left: 350px;
 }
 
 .weather-temp li {
@@ -153,5 +154,12 @@ hr {
 }
 
 .bottom-content {
+  display: inline-block;
   margin-top: 40px;
+}
+
+.weather-icons {
+  display: inline-block;
+  /* margin-left: 80%; */
+  margin-left: 30px;
 }

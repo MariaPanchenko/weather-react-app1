@@ -1,6 +1,7 @@
 import React from 'react';
 import './Weather.css';
 import axios from 'axios';
+import ReactAnimatedWeather from 'react-animated-weather';
 
 export default function Weather() {
   function handleSubmit(response) {
@@ -96,7 +97,33 @@ export default function Weather() {
           <li>+19</li>
           <li>+23</li>
         </ul>
+        <ul className="weather-icons">
+          <li>
+            <ReactAnimatedWeather
+              icon="CLEAR_DAY"
+              color="goldenrod"
+              size={28}
+              animate={true}
+            />
+          </li>
+          <li>
+            <ReactAnimatedWeather
+              icon="WIND"
+              color="goldenrod"
+              size={28}
+              animate={true}
+            />
+          </li>
+          <li>
+            <ReactAnimatedWeather
+              icon="FOG"
+              color="goldenrod"
+              size={28}
+              animate={true}
+            />
+          </li>
+        </ul>
       </div>
     </div>
-  );
+  ));
 }
