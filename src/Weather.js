@@ -12,7 +12,7 @@ export default function Weather() {
   let weatherData = {
     city: 'Lviv',
     temperature: 19,
-    date: 'Tuesday 10:00',
+    // date: 'Tuesday 10:00',
     description: 'Cloudy',
     imgUrl: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png',
     humidity: 80,
@@ -22,7 +22,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <form className="mb-3">
-        <div className="row">
+        <div className="row search-form">
           <div className="col-9">
             <input
               type="search"
@@ -40,35 +40,62 @@ export default function Weather() {
           </div>
         </div>
       </form>
-      <div className="overview">
-        <h1>{weatherData.city}</h1>
-        <ul>
-          <li>Last updated: {weatherData.date}</li>
-          <li>{weatherData.description}</li>
-        </ul>
-      </div>
-      <div className="row">
-        <div className="col-6">
-          <div className="clearfix weather-temperature">
-            <img
-              src={weatherData.imgUrl}
-              alt={weatherData.description}
-              className="float-left"
-            />
-            <div className="float-left">
-              <strong>{weatherData.temperature}</strong>
-              <span className="units">
-                <a href="/">°C</a> | <a href="/">°F</a>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="col-6">
+      <div className="text-center main-content">
+        <div className="overview">
+          <h1>{weatherData.city}</h1>
           <ul>
-            <li>Humidity: {weatherData.humidity}%</li>
-            <li>Wind: {weatherData.wind} km/h</li>
+            {/* <li>Last updated: {weatherData.date}</li> */}
+            <li>{weatherData.description}</li>
           </ul>
         </div>
+        <div className="row">
+          <div className="col-6">
+            <div className="clearfix weather-temperature">
+              <img
+                src={weatherData.imgUrl}
+                alt={weatherData.description}
+                className="float-left"
+              />
+              <div className="float-left">
+                <strong className="temp">{weatherData.temperature}</strong>
+                <br />
+                <br />
+                <br />
+                <span className="units">
+                  <a href="/">°C</a> | <a href="/">°F</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="col-6">
+            <ul>
+              <li className="weater-status">
+                Humidity: {weatherData.humidity}%
+              </li>
+              <li className="weater-status">Wind: {weatherData.wind} km/h</li>
+            </ul>
+          </div>
+        </div>
+        <hr></hr>
+      </div>
+      <div className="bottom-list">
+        <ul>
+          <li className="bottom-lists">Weather</li>
+          <li className="bottom-lists">News</li>
+          <li className="bottom-lists">Photos</li>
+        </ul>
+      </div>
+      <div className="bottom-content">
+        <ul className="weather-day">
+          <li>Monday</li>
+          <li>Tuesday</li>
+          <li>Wednesday</li>
+        </ul>
+        <ul className="weather-temp">
+          <li>+21</li>
+          <li>+19</li>
+          <li>+23</li>
+        </ul>
       </div>
     </div>
   );

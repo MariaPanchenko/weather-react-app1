@@ -67,7 +67,11 @@
   white-space: nowrap;
 }
 
-.row {
+.main-content {
+  text-align: center;
+}
+
+.search-form {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,11 +79,13 @@
 
 .form-control {
   padding: 10px;
+  border: none;
   border-radius: 5px;
-  border: 2px;
 }
 .form-control:hover {
+  background-color: lightgray;
   cursor: pointer;
+  border: none;
 }
 
 .submit-search {
@@ -90,15 +96,62 @@
   padding: 10px;
 }
 .submit-search:hover {
+  background-color: rgb(60, 60, 251);
   cursor: pointer;
 }
 
 h1 {
   color: black;
+  margin-bottom: 10px;
 }
 a {
-  color: black;
+  color: rgb(33, 33, 33);
+  text-decoration: none;
 }
 a:hover {
   cursor: pointer;
+}
+
+.weater-status {
+  margin-bottom: 5px;
+}
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bottom-list {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bottom-lists {
+  display: inline;
+  margin-right: 30px;
+}
+
+.bottom-lists:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.weather-day {
+  display: inline-block;
+}
+
+.weather-day li {
+  margin-bottom: 15px;
+}
+
+.weather-temp {
+  display: inline-block;
+  margin-left: 50%;
+}
+
+.weather-temp li {
+  margin-bottom: 15px;
+}
+
+.bottom-content {
+  margin-top: 40px;
 }
