@@ -22,7 +22,7 @@ export default function Weather() {
   };
 
   return (
-    <div>
+    <div className="weather-all">
       <div className="Weather">
         <form className="mb-3">
           <div className="row search-form">
@@ -45,10 +45,10 @@ export default function Weather() {
         </form>
         <div className="text-center main-content">
           <div className="overview">
-            <h1>{weatherData.city}</h1>
+            <h1 className="city-name">{weatherData.city}</h1>
             <ul>
               {/* <li>Last updated: {weatherData.date}</li> */}
-              <li>{weatherData.description}</li>
+              <li className="weather-descr">{weatherData.description}</li>
             </ul>
           </div>
           <div className="row">
@@ -65,7 +65,9 @@ export default function Weather() {
                   <br />
                   <br />
                   <span className="units">
-                    <a href="/">°C</a> | <a href="/">°F</a>
+                    <a href="/">°C</a>
+                    <span className="line"> | </span>
+                    <a href="/">°F</a>
                   </span>
                 </div>
               </div>
@@ -79,7 +81,7 @@ export default function Weather() {
               </ul>
             </div>
           </div>
-          <hr></hr>
+          {/* <hr></hr> */}
         </div>
         <div className="bottom-list">
           <ul>
@@ -105,7 +107,7 @@ export default function Weather() {
           >
             open-source code
           </a>
-          by Mariia Panchenko
+          {''} by Mariia Panchenko
         </small>
       </div>
     </div>
