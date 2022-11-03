@@ -136,30 +136,14 @@ hr {
 }
 
 .weather-day {
-  display: inline-block;
+  display: block;
+  width: 100%;
+}
+.link-git {
+  color: blue;
 }
 
-.weather-day li {
-  margin-bottom: 15px;
-}
-
-.weather-temp {
-  display: inline-block;
-
-  margin-left: 350px;
-}
-
-.weather-temp li {
-  margin-bottom: 15px;
-}
-
-.bottom-content {
+/* .bottom-content {
   display: inline-block;
   margin-top: 40px;
-}
-
-.weather-icons {
-  display: inline-block;
-  /* margin-left: 80%; */
-  margin-left: 30px;
-}
+} */

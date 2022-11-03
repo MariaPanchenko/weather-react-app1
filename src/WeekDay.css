@@ -1,0 +1,12 @@
+.WeekDay {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.week-day-label {
+  margin-right: auto;
+}
+.week-day-temp {
+  margin-right: 30px;
+}
