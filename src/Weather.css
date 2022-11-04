@@ -20,7 +20,7 @@
 }
 
 .Weather .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  /* color: rgb(33, 33, 33); */
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -87,7 +87,7 @@
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: none;
+  /* background: none; */
 }
 .form-control:hover {
   background-color: white;
