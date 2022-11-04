@@ -114,6 +114,7 @@ export default function Weather() {
             className="link-git"
             href="https://github.com/MariaPanchenko/weather-react-app1"
             target="_blank"
+            rel="noreferrer"
           >
             open-source code
           </a>
