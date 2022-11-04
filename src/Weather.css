@@ -83,7 +83,6 @@
 }
 
 .form-control {
-  color: white;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -165,8 +164,3 @@ hr {
 .link-git {
   color: blue;
 }
-
-/* .bottom-content {
-  display: inline-block;
-  margin-top: 40px;
-} */

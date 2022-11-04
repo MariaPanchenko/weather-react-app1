@@ -1,15 +1,14 @@
 import React from 'react';
 import './Weather.css';
-// import axios from 'axios';
-import ReactAnimatedWeather from 'react-animated-weather';
+import axios from 'axios';
 import WeekDay from './WeekDay';
 
 export default function Weather() {
-  // function handleSubmit(response) {
-  //   let apiKey = '7b33e98fb3b0406841a50cf97f2e248a';
-  //   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=$lviv&appid=${apiKey}&units=metric`;
-  //   axios.get(apiUrl).then(handleSubmit);
-  // }
+  function handleSubmit(response) {
+    let apiKey = '7b33e98fb3b0406841a50cf97f2e248a';
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=$lviv&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleSubmit);
+  }
 
   let weatherData = {
     city: 'Lviv',
