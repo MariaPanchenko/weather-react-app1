@@ -155,6 +155,7 @@ hr {
 .bottom-lists:hover {
   color: black;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .weather-day {
