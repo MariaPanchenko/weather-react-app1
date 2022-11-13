@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import './Weather.css';
 import WeekDay from './WeekDay';
+import WeatherIcon from './WeatherIcon';
 
 export default function WeatherInfo(props) {
   return (
@@ -17,11 +18,12 @@ export default function WeatherInfo(props) {
           <div className="row">
             <div className="col-6">
               <div className="clearfix weather-temperature aligned">
-                <img
+                <WeatherIcon code={props.data.icon} />
+                {/* <img
                   src={props.data.icon}
                   alt={props.data.description}
                   className="float-left"
-                />
+                /> */}
                 <div className="float-left aligned">
                   <strong className="temp">
                     {Math.round(props.data.temperature)}
