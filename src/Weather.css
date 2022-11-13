@@ -113,6 +113,7 @@ h1 {
   color: white;
   font-size: 40px;
   font-weight: 700;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .weather-descr {
@@ -140,14 +141,18 @@ strong {
 .weater-status {
   margin-bottom: 5px;
 }
-hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.weather-info {
+  background-color: rgb(0 0 0 / 28%);
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 5px;
+  padding-bottom: 8px;
 }
 
 .bottom-list {
   text-align: center;
   margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 .bottom-lists {
