@@ -4,9 +4,9 @@ import WeatherInfo from './WeatherInfo';
 import axios from 'axios';
 
 export default function Weather(props) {
-  const [ready, setReady] = useState(false);
+  // const [ready, setReady] = useState(false);
   const [weatherData, setweatherData] = useState({ ready: false });
-  const [temperature, setTemperature] = useState(null);
+  // const [temperature, setTemperature] = useState(null);
   const [city, setCity] = useState(props.defaultCity);
   // function displayWeather(response) {
   //   setWeather({
