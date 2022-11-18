@@ -1,9 +1,12 @@
 import React, { Fragment } from 'react';
 import './Weather.css';
+
 import WeekDay from './WeekDay';
 import WeatherIcon from './WeatherIcon';
+// import WeatherForecast from './WeatherForecast';
 
 export default function WeatherInfo(props) {
+  console.log(props);
   return (
     <Fragment>
       <div className="WeatherInfo Weather">
@@ -74,13 +77,14 @@ export default function WeatherInfo(props) {
               </li>
             </ul>
           </div>
-          <div className="bottom-content">
+          {/* <WeatherForecast coordinates={props.data.coordinates} /> */}
+          {/* <div className="bottom-content">
             <ul className="weather-day">
               <WeekDay label="Monday" temp="+13" iconType="CLEAR_DAY" />
               <WeekDay label="Tuesday" temp="+16" iconType="WIND" />
               <WeekDay label="Wednesday" temp="+15" iconType="FOG" />
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
       <footer>
