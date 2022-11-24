@@ -17,7 +17,7 @@ export default function WeatherForecast(props) {
   console.log(props);
 
   function load() {
-    let apiKey = 'caa883a4a60d93878755b08a933f74ea';
+    let apiKey = '5201594abea9f3e38b70e65b11a80c24';
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
     let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
@@ -28,15 +28,26 @@ export default function WeatherForecast(props) {
     return (
       <div className="bottom-content">
         <div className="weather-day">
-          <WeatherForecastDay data={forecast[0]} />
-          {/* <WeekDay
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 5) {
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </div>
+
+        {/* <WeekDay
             label="Monday"
             temp={forecast[0].temp}
             iconType="CLEAR_DAY"
           />
           <WeekDay label="Tuesday" temp="+16" iconType="WIND" />
           <WeekDay label="Wednesday" temp="+15" iconType="FOG" /> */}
-        </div>
       </div>
     );
   } else {
