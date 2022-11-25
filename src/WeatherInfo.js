@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 import './Weather.css';
-
+// import WeatherForecast from './WeatherForecast';
 import WeekDay from './WeekDay';
 import WeatherIcon from './WeatherIcon';
-// import WeatherForecast from './WeatherForecast';
+import WeatherForecast from './WeatherForecast';
 
 export default function WeatherInfo(props) {
   console.log(props);
+  // if (weatherData.ready) {
   return (
     <Fragment>
       <div className="WeatherInfo Weather">
@@ -77,6 +78,9 @@ export default function WeatherInfo(props) {
               </li>
             </ul>
           </div>
+          <WeatherInfo data={weatherData} />
+          <WeatherForecast coordinates={weatherData.coordinates} />
+          {/* <WeatherForecast coordinates={weatherData.coordinates} /> */}
           {/* <WeatherForecast coordinates={props.data.coordinates} /> */}
           {/* <div className="bottom-content">
             <ul className="weather-day">
@@ -102,6 +106,12 @@ export default function WeatherInfo(props) {
           </small>
         </div>
       </footer>
+      );
+      {/* } else {
+    search()
+
+    return 'Loading..';
+  } */}
     </Fragment>
   );
 }
