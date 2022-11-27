@@ -1,27 +1,32 @@
-import React, { useState } from 'react';
-import './Weather.css';
+import React, { useState, useEffect } from 'react';
+import './WeatherForecast.css';
 import WeatherForecastDay from './WeatherForecastDay';
 
-import WeekDay from './WeekDay';
+// import WeekDay from './WeekDay';
 
 import axios from 'axios';
 
-export default function WeatherForecast(props) {
+export default function WeatherForecast({ coordinates }) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
+
+  useEffect(() => {
+    load();
+  }, [coordinates]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
   }
-  console.log(props);
 
   function load() {
-    let apiKey = '5201594abea9f3e38b70e65b11a80c24';
-    let longitude = props.coordinates.lon;
-    let latitude = props.coordinates.lat;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+    if (coordinates !== undefined) {
+      let apiKey = '5201594abea9f3e38b70e65b11a80c24';
+      let longitude = coordinates.lon;
+      let latitude = coordinates.lat;
+      let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+      axios.get(apiUrl).then(handleResponse);
+    }
   }
 
   if (loaded) {

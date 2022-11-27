@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import Weather from './Weather';
+// import Weather from './Weather';
+import AppWeather from './modules/App/AppWeather';
 
 export default function App() {
   return (
-    <div className="App">
-      <Weather defaultCity="Lviv" />
-      <header className="App-header"></header>
-    </div>
+    // <div className="App">
+    //   <Weather defaultCity="Lviv" />
+    //   <header className="App-header"></header>
+    // </div>
+    <AppWeather />
   );
 }
 // export default function App() {

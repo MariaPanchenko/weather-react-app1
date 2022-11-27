@@ -1,7 +1,8 @@
 .weather-all {
-  background-image: url(../img/landscape.jpg);
-  height: 395px;
-  width: 500px;
+  background-image: url(../../../img/landscape.jpg);
+  width: inherit;
+  background-size: 100% 414px;
+  background-repeat: no-repeat;
 }
 .Weather {
   padding: 20px;
@@ -75,36 +76,6 @@
 .main-content {
   text-align: center;
 }
-
-.search-form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.form-control {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  /* background: none; */
-}
-.form-control:hover {
-  background-color: white;
-  cursor: pointer;
-  border: none;
-}
-
-.submit-search {
-  background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-}
-.submit-search:hover {
-  background-color: rgb(60, 60, 251);
-  cursor: pointer;
-}
 .aligned {
   text-align: center;
 }
@@ -147,32 +118,4 @@ strong {
   margin-right: -20px;
   padding-top: 5px;
   padding-bottom: 24px;
-}
-
-.bottom-list {
-  text-align: center;
-  margin-bottom: 20px;
-  padding-top: 10px;
-}
-
-.bottom-lists {
-  text-align: center;
-  display: inline;
-  margin: 20px;
-  text-decoration: none;
-  color: rgb(135, 135, 135);
-}
-
-.bottom-lists:hover {
-  color: black;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.weather-day {
-  display: block;
-  width: 100%;
-}
-.link-git {
-  color: blue;
 }

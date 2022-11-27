@@ -1,0 +1,29 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  /* background: none; */
+}
+.form-control:hover {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-search {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.submit-search:hover {
+  background-color: rgb(60, 60, 251);
+  cursor: pointer;
+}
