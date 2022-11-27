@@ -12,6 +12,7 @@ export default function WeatherForecast({ coordinates }) {
 
   useEffect(() => {
     load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [coordinates]);
 
   function handleResponse(response) {
