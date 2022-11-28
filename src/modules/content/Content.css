@@ -1,7 +1,7 @@
 .weather-all {
   background-image: url(../../../img/landscape.jpg);
   width: inherit;
-  background-size: 100% 414px;
+  background-size: 100% 353px;
   background-repeat: no-repeat;
 }
 .Weather {
@@ -113,7 +113,7 @@ strong {
   margin-bottom: 5px;
 }
 .weather-info {
-  background-color: rgba(3, 11, 242, 0.171);
+  background-color: rgba(210, 32, 250, 0.171);
   margin-left: -20px;
   margin-right: -20px;
   padding-top: 5px;
